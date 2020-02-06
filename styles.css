@@ -1,5 +1,6 @@
 body {
-    
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -31,4 +32,16 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+h2{
+    margin: 0;
+    background-color: white;
+    display: inline;
+}
+
+.content-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
