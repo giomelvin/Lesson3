@@ -1,6 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 img {
@@ -8,24 +18,24 @@ img {
 }
 
 header {
-    background-color: #87F6FF;
+    background-color: #CEE5F2;
 }
 
 .Work {
-    background-color: #DAF5FF;
+    background-color: #ACCBE1;
 }
 
 .Edu {
-    background-color: #44FFD2;
+    background-color: #7C98B3;
 }
 
 footer {
-    background-color: #FFBFA0;
+    background-color: #637081;
 }
 
 a {
     color: blue;
-    background-color: cornsilk;
+    background-color: #CEE5F2;
     padding: 8px;
     border-radius: 4px;
 }
@@ -34,10 +44,23 @@ a:hover {
     text-decoration: none;
 }
 
-h2{
-    margin: 0;
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 6px 6px 8px gray;
+    text-align: center;
+}
+
+h2 {
     background-color: white;
     display: inline;
+    font-size: 45px;
+}
+
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0;
 }
 
 .content-wrap {
