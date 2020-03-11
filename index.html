@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+
+    <nav>
+      <ul>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        
+        <li>
+          Services
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Logo Design</a></li>
+          </ul>
+        </li>
+      
+        <li>
+          Contact Me
+          <ul>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Contact Form</a></li>
+          </ul>
+        </li>
+      
+      </ul>
+    </nav>
+
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
@@ -27,20 +55,29 @@
           <p>I have currently  worked only one job and im still working there today. I work at the Life Cafe at LifeTime Fitness in Raleigh</p>
 
           <!-- Copy this whole <section> block to add more jobs. -->
-          <section>
-            <h3>Shift Lead - Life Cafe</h3>
-            <p>LifeTime Fitness</p>
-            <p>April 2018 - Present</p>
-            <p>I have been working here for a couple of yers now, and I enjoy the people I get to work with.</p>
-            <p>What I typically do:</p>
-            <ul>
-              <li>On the register</li>
-              <li>Making shakes and smoothies</li>
-              <li>Running out food</li>
-              <li>Stocking</li>
-              <li>Cleaning</li>
-            </ul>
-          </div>
+          <section class="job-item">
+            <div class="job-details">
+
+              <h3>Shift Lead - Life Cafe</h3>
+              <p>LifeTime Fitness</p>
+              <p>April 2018 - Present</p>
+
+            </div>
+            <div class="job-summary">
+
+              <p>I have been working here for a couple of yers now, and I enjoy the people I get to work with.</p>
+              <p>What I typically do:</p>
+                <ul>
+                    <li>On the register</li>
+                    <li>Making shakes and smoothies</li>
+                    <li>Running out food</li>
+                    <li>Stocking</li>
+                    <li>Cleaning</li>
+                </ul>
+                
+            </div>
+        </div>
+            
         </section>
         <!-- End of Job block. -->
       </section>
@@ -59,13 +96,36 @@
         <!-- End of School block. -->
       </section>
 
+      <!-- ********************* FORM *******************-->
+      <section class="form">
+        <form>
+          <h3>Contact Form</h3>
+          <ul>
+            <li><label for="fName">First name:</label> <input type="text" name="fName" id="fName" placeholder="Your First Name" class="text-input"></li>
+            <li><label for="lName">Last name:</label> <input type="text" name="lName" id="lName" placeholder="Your Last Name" class="text-input"></li>
+            <li><label for="phone">Phone Number:</label> <input type="tel" name="phone" id="tele" placeholder="(123)-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="text-input" required></li>
+            <li><label for="email">Email:</label> <input type="email" name="email" id="email" class="text-input"></li>
+            <li><label for="interest">Area of Interest:</label> <select name="AOI">
+                <option value="webDesign">Web Design</option>
+                <option value="webDevelop">Web Development</option>
+                <option value="imgOpt">Image Optimization</option>
+                <option value="UX">UX Design</option>
+                <option value="usaTesting">Usability Testing</option>
+                <option value="graphDesign">Graphic Design</option>
+            </select> </li>
+            <li><label for="subject">Subject</label> <textarea name="message">Message</textarea></li>
+          </ul>
+          <button type="submit" class="btnSubmit">Submit</button>
+        </form>
+      </section>
+
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
         <div class="content-wrap">
           <h2>Send Me a Email!</h2>
 
           <!-- Social media and contact links. Add or remove any networks. -->
-          <ul>
+          <ul class="contact-list">
             <li><a href="mailto:gamelvin@my.waketech.edu">gamelvin@my.waketech.edu</a></li>
           </ul>
         </div>

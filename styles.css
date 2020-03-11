@@ -19,10 +19,17 @@ img {
 
 header {
     background-color: #CEE5F2;
+    text-align: center;
 }
 
 .Work {
     background-color: #ACCBE1;
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
 }
 
 .Edu {
@@ -30,7 +37,20 @@ header {
 }
 
 footer {
+    text-align: center;
     background-color: #637081;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
 }
 
 a {
@@ -67,4 +87,59 @@ h1, h2 {
     width: 1000px;
     margin: 0 auto;
     padding: 60px 0;
+}
+
+
+/* -------Navagation Bar------ */
+
+ul {
+     text-align: left;
+     list-style: none;
+}
+    
+ul li {
+     font: bold 13px/19px  'Lato' ,sans-serif;
+     display: inline-block;
+     position: relative;
+     padding: 15px 20px;
+     background: #fff;
+     cursor: pointer;
+}
+    
+ul li:hover {
+     background: #7C98B3;
+     color: #fff;
+}
+    
+ul li ul {
+     padding: 0;
+     position: absolute;
+     top: 48px;
+     left: -10000px;
+     width: 150px;
+}
+    
+ul li ul li {
+     background: #7C98B3;
+     display: block;
+     color: #fff;
+}
+    
+ul li ul li:hover { 
+    background: lightblue; 
+}
+    
+ul li:hover ul {
+     display: block;
+     left :0px;
+}
+
+
+/*--------------- FLEX CSS ----------------*/
+
+section, header, footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
